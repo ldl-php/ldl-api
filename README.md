@@ -1,1 +1,3 @@
-# ldl-lms-api
+# ldl-api
+
+## A general purpose API
