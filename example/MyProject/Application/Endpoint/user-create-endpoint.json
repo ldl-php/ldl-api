@@ -1,0 +1,34 @@
+{
+  "routes": [
+    {
+      "version": "1.0",
+      "url": {
+        "prefix": "user/create",
+        "authentication": {
+          "type": "basic"
+        }
+      },
+      "name": "User create",
+      "description": "Creates a user",
+      "dispatcher": {
+        "class": "\\MyProject\\Application\\Dispatcher\\User\\Crud\\CreateDispatcher"
+      },
+      "request": {
+        "method": "post",
+        "headers": {
+          "schema": {
+            "repository": "application-json.schema"
+          }
+        },
+        "parameters": {
+          "schema": {
+            "repository": "user-create-parameters.schema"
+          }
+        }
+      },
+      "response": {
+        "contentType": "application/json"
+      }
+    }
+  ]
+}

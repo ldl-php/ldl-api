@@ -1,0 +1,22 @@
+{
+    "name": "ldl-framework/ldl-api",
+    "description": "LDL Framework API",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Federico",
+            "email": "jpfstange@gmail.com"
+        }
+    ],
+    "require": {
+        "ldl-framework/http-router": "dev-master",
+        "ldl-framework/orchestrator": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "LDL\\Http\\Api\\": "src/LDL/Http/Api"
+        }
+    }
+}
