@@ -12,7 +12,8 @@
     ],
     "require": {
         "ldl-framework/http-router": "dev-master",
-        "ldl-framework/orchestrator": "dev-master"
+        "ldl-framework/orchestrator": "dev-master",
+        "ext-json": "*"
     },
     "autoload": {
         "psr-4": {
